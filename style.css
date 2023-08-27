@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Wix+Madefor+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* header nav */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  body {
+    background-image: url(./assets/pexels-neo-2653362.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* header nav */
+  /* Style tab links */  
+ .header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  /* background: blue; */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+ }
+
+ .logo {
+  font-size: 32px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+ }
+
+ .nav-bar a {
+  position: relative;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 20px;
+  letter-spacing: 2px;
+ }
+
+ .nav-bar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: blue;
+ }
+
+ .nav-bar a:hover::before {
+  width: 100%;
+ }
+
+ @media (max-width: 1000px) {
+	.header {
+		padding: 15px 40px;
+	}
+}
+@media (max-width: 700px) {
+	.header {
+		flex-direction: column;
+	}
+	.header .logo {
+		width: 100px;
+	}
+	.header .nav-bar a {
+		margin: 0 7px;
+	}
+}
+/* header nav */
+
+
+/* section home */
+.tabcontent {
+    /* color: white; */
+    display: none;
+    /* padding: 100px 20px; */
+    height: 100%;
+  }
+
+#Home .container {
+/* background: rgba(54, 54, 54, 0.603); */
+border-radius: 16px;
+/* box-shadow: 0 4px 32px rgba(92, 91, 91, 0.363); */
+backdrop-filter: blur(4.9px);
+/* -webkit-backdrop-filter: blur(4.9px); */
+/* border: 1px solid rgba(32, 32, 32, 0.3); */
+}
+
+/* #Home img {
+  border-radius: 50%;
+} */
+
+.left-col {
+  --g: 8px; /* the gap */
+  
+  display: grid;
+  clip-path: inset(1px); /* to avoid visual glitchs */
+}
+.left-col > img {
+  --_p: calc(-1*var(--g));
+  grid-area: 1/1;
+  height: 550px;
+  width: 560px; /* control the size */
+  border-radius: 30px;
+  padding: 20px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: .4s .1s;
+}
+.left-col > img:first-child {
+  clip-path: polygon(0 0, calc(100% + var(--_p)) 0 , 0 calc(100% + var(--_p)))
+}
+.left-col > img:last-child {
+  clip-path: polygon(100% 100%, 100% calc(0% - var(--_p)), calc(0% - var(--_p)) 100%)
+}
+.left-col:hover > img:last-child,
+.left-col:hover > img:first-child:hover{
+  --_p: calc(50% - var(--g));
+}
+.left-col:hover > img:first-child,
+.left-col:hover > img:first-child:hover + img{
+  --_p: calc(-50% - var(--g));
+}
+
+
+.right-col {
+  padding: 50px; 
+}
+
+.right-col h1 {
+  text-decoration: underline rgb(161, 160, 160) 2px ;
+  color: rgb(231, 229, 229);
+  text-shadow: 0 4px 30px rgba(72, 75, 235, 0.63);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  
+}
+
+.right-col h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.right-col p {
+  font-family: 'Shadows Into Light', cursive;
+  font: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.right-col h2 {
+  text-decoration: underline rgb(161, 160, 160) 2px ;
+  font-family: 'Shadows Into Light', cursive;
+  font: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.skills {
+  display: inline-flex;
+  /* justify-content: center; */
+  align-items: center;
+  list-style: none;
+  border: solid 3px rgb(230, 74, 12);
+  border-radius: 10px;
+}
+
+.skills li {
+  margin-left: -40px;
+}
+
+
+
+
+  /* section home */
+
+  /* about */
+ #About .container2 {
+    /* background: rgba(54, 54, 54, 0.603); */
+    border-radius: 16px;
+    /* box-shadow: 0 4px 32px rgba(92, 91, 91, 0.363); */
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(32, 32, 32, 0.3);
+    }
+
+.circle1 {
+  position: absolute;
+  right: 0;
+  background: rgba(255, 187, 0, 0.781);
+  backdrop-filter: blur(4.9px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+ 
+}
+
+.circle2 {
+  position: absolute;
+  background-color: blue;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+  /* about */
+
+  /* section projects */
+
+  /* projects */
+#Projects .container {
+  border-radius: 16px;
+  backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(32, 32, 32, 0.3);
+}
+
+  /* projects */
+
+  /* section contacts */
+
+  /* contact */
+  #Contact .container {
+    border-radius: 16px;
+  backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(32, 32, 32, 0.3);
+  }
+  
+  .direct-contact-container {
+    /* max-width: 400px; */
+   text-align: center;
+   
+
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+   
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #f1f0f0;
+    
+  }
+  
+  .contact-text {
+    font-family: 'Shadows Into Light', cursive;
+    font: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list a {
+    color: #fff;
+  }
+  
+  .social-media-list a {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list a:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list a:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list :hover {
+    color: #000;
+  }
+  
+  .copyright {
+    font-family: 'Shadows Into Light', cursive;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  
+ 
+  /* contact */
+
