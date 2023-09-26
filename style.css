@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Wix+Madefor+Text:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 /* header nav */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Shadows Into Light', cursive;
   }
 
   body {
@@ -29,18 +29,18 @@ body, html {
  }
 
  .logo {
-  font-size: 32px;
+  font-size: 30px;
   color: white;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rubik Iso', cursive;
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-weight: 400;
+  /* letter-spacing: 2px; */
  }
 
  .nav-bar a {
   position: relative;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 25px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
   color: white;
   font-weight: 400;
   text-decoration: none;
@@ -98,6 +98,7 @@ backdrop-filter: blur(4.9px);
 /* border: 1px solid rgba(32, 32, 32, 0.3); */
 }
 
+
 /* #Home img {
   border-radius: 50%;
 } */
@@ -143,20 +144,22 @@ backdrop-filter: blur(4.9px);
   text-decoration: underline rgb(161, 160, 160) 2px ;
   color: rgb(231, 229, 229);
   text-shadow: 0 4px 30px rgba(72, 75, 235, 0.63);
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 50px;
+  font-family: 'Rubik Iso', cursive;
+  font-size: 40px;
   
 }
 
 .right-col h3 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'League Spartan', sans-serif;
+
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
 .right-col p {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'League Spartan', sans-serif;
+
   font: 20px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -164,7 +167,7 @@ backdrop-filter: blur(4.9px);
 
 .right-col h2 {
   text-decoration: underline rgb(161, 160, 160) 2px ;
-  font-family: 'Shadows Into Light', cursive;
+  
   font: 20px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -196,6 +199,8 @@ backdrop-filter: blur(4.9px);
     backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid rgba(32, 32, 32, 0.3);
+    font-family: 'League Spartan', sans-serif;
+
     }
 
 .circle1 {
@@ -223,6 +228,8 @@ backdrop-filter: blur(4.9px);
 
   /* projects */
 #Projects .container {
+  font-family: 'League Spartan', sans-serif;
+
   border-radius: 16px;
   backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
@@ -235,6 +242,8 @@ backdrop-filter: blur(4.9px);
 
   /* contact */
   #Contact .container {
+    font-family: 'League Spartan', sans-serif;
+
     border-radius: 16px;
   backdrop-filter: blur(4.9px);
     -webkit-backdrop-filter: blur(4.9px);
@@ -263,7 +272,7 @@ backdrop-filter: blur(4.9px);
   }
   
   .contact-text {
-    font-family: 'Shadows Into Light', cursive;
+    
     font: 20px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -347,7 +356,7 @@ backdrop-filter: blur(4.9px);
   }
   
   .copyright {
-    font-family: 'Shadows Into Light', cursive;
+    
     color: #555;
     letter-spacing: 1px;
     text-align: center;
